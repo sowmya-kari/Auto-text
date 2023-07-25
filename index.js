@@ -5,7 +5,7 @@ let characterIndex = 0;
 updateText();
 function updateText(){
   characterIndex++;
-  containerE1.innerHTML= `<h1> Iam a  ${careers[careerIndex].slice(0,1) === "E" ?" An" }${careers[careerIndex].slice(0,characterIndex)} </h1>`;
+  containerE1.innerHTML= `<h1> Iam a  ${careers[careerIndex].slice(0,1) === "E" ? "An" :"A"} ${careers[careerIndex].slice(0,characterIndex)} </h1>`;
   if(characterIndex === careers[careerIndex].length){
      careerIndex++
      characterIndex = 0;
